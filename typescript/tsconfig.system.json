@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "target": "es2017",
+    "module": "system",
+    "outDir": "dist/system"
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx"]
+}
