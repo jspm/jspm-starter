@@ -5,7 +5,7 @@ Start repos for using JSPM import maps workflows from development to production.
 Starters included:
 
 * [React App](tree/main/react) - Basic React application with native modules and a JSPM import map.
-* [JSX via SystemJS and Babel](tree/main/systemjs-babel) - React JSX application using SystemJS in development then Babel to output native modules or SystemJS modules for production.
+* [SystemJS via Babel with JSX](tree/main/systemjs-babel) - React JSX application using SystemJS in development then Babel to output native modules or SystemJS modules for production.
 * [TypeScript via TSC](tree/main/typescript) - TypeScript in-browser SystemJS workflow outputting native modules or SystemJS modules in production.
 * [Optimization with RollupJS](tree/main/rollup) - RollupJS optimization outputting both native modules and SystemJS variants.
 * [Your favourite project here](#add-a-starter)
