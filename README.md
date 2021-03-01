@@ -45,7 +45,7 @@ If the build has a watch mode a separate `npm run watch-build` may be present, b
 
 ### That's all
 
-There's nothing more to learn or know. Get back to learning the language, learning the DOM, learning the framework. Don't waste time learning unnecessary tools. Get hacking.
+Get back to learning the language, learning the DOM, learning the framework. Don't waste time learning unnecessary tools. Get hacking!
 
 ## Add a Starter
 
