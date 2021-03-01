@@ -30,7 +30,23 @@
     }
   }
   </script>
-  
+  <!--
+    Production Import Map for React:
+    <script type="importmap">
+    {
+      "imports": {
+        "react": "https://ga.jspm.io/npm:react@17.0.1/index.js",
+        "react-dom": "https://ga.jspm.io/npm:react-dom@17.0.1/index.js"
+      },
+      "scopes": {
+        "https://ga.jspm.io/": {
+          "object-assign": "https://ga.jspm.io/npm:object-assign@4.1.1/index.js",
+          "scheduler": "https://ga.jspm.io/npm:scheduler@0.20.1/index.js"
+        }
+      }
+    }
+    </script>
+  -->
   <script type="module" src="./src/app.js"></script>
 </body>
 </html>
