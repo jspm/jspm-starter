@@ -15,3 +15,5 @@ TypeScript Implementation Details:
 * In addition explicit `.ts` extensions are used for local relative imports, see the src/app.tsx file.
 * TSC handling for converting `.ts` into `.js` is not currently supported, instead a typescript-hack-so-sorry.js script provides this functionality.
 * The tsconfig.json and tsconfig.system.json files demonstrate the TypeScript configuration.
+
+See the [workflows section of the JSPM documentation](https://jspm.org/docs/workflows#typescript), where some alternatives to this workflow are shown as well.
