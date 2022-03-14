@@ -1,59 +1,55 @@
-# JSPM Starters
+# JSPM Starter
 
-Start repos for using JSPM import maps workflows from development to production.
+Starter repo for using JSPM import maps workflows from development to production.
 
-Starters included:
+## What This Does
 
-* [React App](react) - Basic React application with native modules and a JSPM import map.
-* [SystemJS via Babel with JSX](systemjs-babel) - React JSX application using SystemJS in development then Babel to output native modules or SystemJS modules for production.
-* [TypeScript via TSC](typescript) - TypeScript in-browser SystemJS workflow outputting native modules or SystemJS modules in production.
-* [Optimization with RollupJS](rollup) - RollupJS optimization outputting both native modules and SystemJS variants.
-* [Your favourite project here](#add-a-starter)
+This demonstrates a Lit component `src/motion-slide.ts` being built from TypeScript into JavaScript, and then run in `app.html` with Lit and its dependencies loaded from the JSPM CDN using the JSPM generator generated import map.
 
-## Starter Workflow
+The two build steps being run are:
 
-The typical workflow for all starters is the same and is as described below.
+1. Converting TypeScript into JavaScript (`src/x.ts` -> `lib/x.js`).
+2. Injecting the import map into the `app.html` file using JSPM Generator's [htmlGenerate](https://github.com/jspm/generator#generating-html) method.
 
-For more information on these workflows and the JSPM CDN, see the related documentation section at [JSPM Workflows](https://jspm.org/docs/workflows).
+The JSPM generator will automatically pick up all included JS files and work out the correct import map to make them work.
 
-### 1. Buildless Development
+Adding new dependency imports will automatically be picked up and added to the import map. Custom dependency ranges in the local package.json file will be used if present.
 
-Each starter exposes an `index.html` page. The `index.html` page is a direct copy-paste genrated by [JSPM Generator](https://generator.jspm.io),
-with a `<script type="module">` referencing the main application entry point. The link to the original JSPM Generator workspace can be found in the `index.html` file.
+The ES Module Shims polyfill is automatically included to the latest version to support import maps in older browsers.
 
-No tooling installs or tasks is needed to run in development mode. Just start a local server or host the files.
+## The Build Workflows
 
-For example with `npx http-server -c-1` and navigating to `http://localhost:8080/index.html` in a web browser to see the example.
+There are two ways to run the starter:
 
-### 2. Optional Production Optimization
+1. [Classic npm Scripts](#npm-scripts-workflow)
+2. [Chomp Task Runner & Dev Server](#chomp-workflow) (recommended!)
 
-Some starters have an optimization task, and when they do this uses the standard _npm build_ task convention.
+Chomp is recommended as it provides makefile-style caching and also comes with a web server and fast incremental watcher, although it does first require installation via `cargo`.
 
-Optmization typically involves building modules together into a single file or chunks via code splitting for larger applications.
+### npm Scripts Workflow
 
-```
-npm run install && npm run build
+```sh
+npm install
+npm run build
 ```
 
-Once the optimization task has run, the optimized application can be viewed via a separate `index-build.html`.
+Run your preferred local static web server and navigate to `app.html` to see the built application.
 
-If the task builds for both SystemJS and for ES modules, a separate `index-build-system.html` can be found as well.
+### Chomp Workflow
 
-The optimized sources are not checked in to avoid unnecessary churn so the build task does still need to be explicitly run.
+You will need to have Chomp installed with the [Rust Toolchain](https://rustup.rs/):
 
-If the build has a watch mode a separate `npm run watch-build` may be present, but will do exactly the same work as `npm run build`.
+```sh
+cargo install chompbuild
+```
 
-### That's all
+From the cloned `jspm-starter` folder, run the Chomp build task with the dev server:
 
-Get back to learning the language, learning the DOM, learning the framework. Don't waste time learning unnecessary tools. Get hacking!
+```sh
+chomp build --serve
+```
 
-## Add a Starter
-
-To add a new starter project to this repo, create a PR with a new folder following the existing pattern.
-
-Any starter should be a public open source framework or component library on npm.
-
-Verify that the starter provides the exact steps described for starters above, and nothing more than that unless absolutely necessary.
+Navigate to `http://localhost:5776/app.html` in a web browser to see the built application.
 
 ### License
 

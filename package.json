@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "lit": "^2.2.0"
+  },
+  "devDependencies": {
+    "@jspm/generator": "^1.0.0-beta.26",
+    "@lit-labs/motion": "^1.0.2",
+    "@swc/cli": "^0.1.55",
+    "@swc/core": "^1.2.154",
+    "mkdirp": "^1.0.4",
+    "typescript": "^4.6.2"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "npm run tsc ; npm run jspm",
+    "tsc": "tsc -p .",
+    "jspm": "node build-jspm.js"
+  }
+}

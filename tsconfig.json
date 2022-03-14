@@ -2,9 +2,9 @@
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
     "moduleResolution": "node",
-    "target": "es2017",
+    "target": "es2019",
     "module": "esnext",
-    "outDir": "dist/esm"
+    "outDir": "lib"
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx"]
+  "include": ["src/**/*.ts"]
 }

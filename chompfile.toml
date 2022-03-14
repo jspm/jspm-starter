@@ -1,0 +1,21 @@
+version = 0.1
+default-task = 'build'
+
+extensions = ['chomp@0.1:swc']
+
+[[task]]
+name = 'build'
+deps = ['app.html']
+
+[[task]]
+target = 'lib/#.js'
+dep = 'src/#.ts'
+template = 'swc'
+[task.template-options]
+'jsc.target' = 'es2019'
+source-maps = false
+
+[[task]]
+target = 'app.html'
+deps = ['app.html', 'lib/**/*.js']
+run = 'node build-jspm.js'

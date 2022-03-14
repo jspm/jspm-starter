@@ -1,0 +1,50 @@
+<!doctype html>
+<head>
+  <script async src="https://ga.jspm.io/npm:es-module-shims@1.4.7/dist/es-module-shims.js" crossorigin="anonymous" integrity="sha384-OU4ksVc4SCSyQDIJcP0qCgEWOfhpE36CC1JFrcmgTfSJvKvI/2f9Vop4YpSWqvut"></script>
+<script type="importmap">
+{
+  "scopes": {
+    "./": {
+      "@lit-labs/motion": "https://ga.jspm.io/npm:@lit-labs/motion@1.0.2/index.js",
+      "lit": "https://ga.jspm.io/npm:lit@2.2.0/index.js",
+      "lit/directives/class-map.js": "https://ga.jspm.io/npm:lit@2.2.0/directives/class-map.js"
+    },
+    "https://ga.jspm.io/": {
+      "@lit/reactive-element": "https://ga.jspm.io/npm:@lit/reactive-element@1.3.0/reactive-element.js",
+      "lit-element/lit-element.js": "https://ga.jspm.io/npm:lit-element@3.2.0/lit-element.js",
+      "lit-html": "https://ga.jspm.io/npm:lit-html@2.2.0/lit-html.js",
+      "lit-html/async-directive.js": "https://ga.jspm.io/npm:lit-html@2.2.0/async-directive.js",
+      "lit-html/directive.js": "https://ga.jspm.io/npm:lit-html@2.2.0/directive.js",
+      "lit-html/directives/class-map.js": "https://ga.jspm.io/npm:lit-html@2.2.0/directives/class-map.js",
+      "lit/async-directive.js": "https://ga.jspm.io/npm:lit@2.2.0/async-directive.js",
+      "lit/directive.js": "https://ga.jspm.io/npm:lit@2.2.0/directive.js",
+      "lit/html.js": "https://ga.jspm.io/npm:lit@2.2.0/html.js"
+    }
+  }
+}
+</script>
+<link rel="modulepreload" href="./lib/motion-slide.js" integrity="sha384-gJNh8s1t9oY2TAOqSdWBQ1V8nNiep51QxeCPnCMDTM3CspuqVse++17nkRSnFRDc" />
+<link rel="modulepreload" href="https://ga.jspm.io/npm:@lit-labs/motion@1.0.2/index.js" integrity="sha384-IV3335GCqA52MIxWw+5pM9zdOn64eevYSslxqctbRmnCl5gEbEGMBRFTyk4PmBLF" />
+<link rel="modulepreload" href="https://ga.jspm.io/npm:@lit/reactive-element@1.3.0/css-tag.js" integrity="sha384-thzlpnM3mUJLs4O2b3kqsbT/vEn5u4EVo/qlTwqyFQwEjxb+pDYA+XPyihgmzhcQ" />
+<link rel="modulepreload" href="https://ga.jspm.io/npm:@lit/reactive-element@1.3.0/reactive-element.js" integrity="sha384-2Co88mEsBy+5Qig8x6MF1Gxe508MrdPXFNdCTqgpKfVqB8tqUKq+ozJrMCbaND7Z" />
+<link rel="modulepreload" href="https://ga.jspm.io/npm:lit-element@3.2.0/lit-element.js" integrity="sha384-WhweUdCGP/IRrRI/OSWJ3FwnVDGwskwa7TcH9QINHE7m/3zr/KWPZhsCyGP7wBhw" />
+<link rel="modulepreload" href="https://ga.jspm.io/npm:lit-html@2.2.0/async-directive.js" integrity="sha384-wwXPNZI7r2TokqWk1KzhB0GHfssF0i/xa7uAHjNffTBNj5VxMqcBFY02JwAqsi5M" />
+<link rel="modulepreload" href="https://ga.jspm.io/npm:lit-html@2.2.0/directive-helpers.js" integrity="sha384-t8OUHsX1ktmSlMNSswo7Mo0b91DKx+lWbjky4FcmvZPsLzttSo9VKJrSOdq9b64s" />
+<link rel="modulepreload" href="https://ga.jspm.io/npm:lit-html@2.2.0/directive.js" integrity="sha384-6yWI0r6I8Xw7MCH2h66XpNPTq7KEl8YMc4c2YCtTGX7nPVaWRqPiJ+DUgRSEj64T" />
+<link rel="modulepreload" href="https://ga.jspm.io/npm:lit-html@2.2.0/directives/class-map.js" integrity="sha384-pqpVurJ5IPWOGlFgrXhaqTb58kzZowbOzztnltLtOD5j6EinBZAWDlZsJSHTBp7M" />
+<link rel="modulepreload" href="https://ga.jspm.io/npm:lit-html@2.2.0/lit-html.js" integrity="sha384-jVFzHonRfHep/SpTsBLghYoUEhxhyO9wfrnCMIS8pN/pz7UMIRApbf19xWonlaZw" />
+<link rel="modulepreload" href="https://ga.jspm.io/npm:lit@2.2.0/async-directive.js" integrity="sha384-q9z+7I461Mv58o2NVtPOjC8wPJADTdIIke6d4exzYISr1bm3qgB9q7sMXUS6hGbo" />
+<link rel="modulepreload" href="https://ga.jspm.io/npm:lit@2.2.0/directive.js" integrity="sha384-m0ZYtsNcs9/KWoOlgJEyCWbmf6lD6xmIy1MFNHWOam448d8s+AoAcucANUqpR9Y5" />
+<link rel="modulepreload" href="https://ga.jspm.io/npm:lit@2.2.0/directives/class-map.js" integrity="sha384-ogGKBuDV2FP1W9o1xVHSOCsEZWyjDnHu4uhCG5Jme1tiSunNhLHf0EDmsNyoajEG" />
+<link rel="modulepreload" href="https://ga.jspm.io/npm:lit@2.2.0/html.js" integrity="sha384-NWn4csb2lWik4vlWirkYIP0gkstzg05/g6wSbUPRUbyR8XtdKLgI5+7/w6E4GKkS" />
+<link rel="modulepreload" href="https://ga.jspm.io/npm:lit@2.2.0/index.js" integrity="sha384-x0sXMEWsuSb+5pz5vA92fVgFt7jWbflm6MG1E4seyr/Nqrgr7UG6eNlJWCynp7/H" />
+<script type="module" src="./lib/motion-slide.js" integrity="sha384-gJNh8s1t9oY2TAOqSdWBQ1V8nNiep51QxeCPnCMDTM3CspuqVse++17nkRSnFRDc"></script>
+  <style>
+    motion-slide {
+      --circle-size: 10vw;
+    }
+  </style>
+</head>
+<body>
+  <motion-slide></motion-slide>
+</body>
