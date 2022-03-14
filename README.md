@@ -1,6 +1,6 @@
 # JSPM Starter
 
-Starter repo for using JSPM import maps workflows from development to production.
+Starter repo for using JSPM generated import maps.
 
 ## What This Does
 
