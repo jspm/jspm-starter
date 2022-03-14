@@ -51,6 +51,8 @@ chomp build --serve
 
 Navigate to `http://localhost:5776/app.html` in a web browser to see the built application.
 
+Incremental rebuilds will apply as changes are made. Future support for [hot reloading](https://github.com/guybedford/es-module-shims/pull/269) is planned.
+
 ### License
 
 MIT
