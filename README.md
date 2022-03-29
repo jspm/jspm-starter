@@ -24,7 +24,7 @@ There are two ways to run the starter:
 1. [Classic npm Scripts](#npm-scripts-workflow)
 2. [Chomp Task Runner & Dev Server](#chomp-workflow) (recommended!)
 
-Chomp is recommended as it provides makefile-style caching and also comes with a web server and fast incremental watcher, although it does first require installation via `cargo`.
+Chomp is recommended as it provides makefile-style caching and also comes with a web server and fast incremental watcher.
 
 ### npm Scripts Workflow
 
@@ -37,7 +37,13 @@ Run your preferred local static web server and navigate to `app.html` to see the
 
 ### Chomp Workflow
 
-You will need to have Chomp installed with the [Rust Toolchain](https://rustup.rs/):
+You will need to have Chomp installed either via npm:
+
+```sh
+npm install -g chomp
+```
+
+or with the [Rust Toolchain](https://rustup.rs/):
 
 ```sh
 cargo install chompbuild
